@@ -1,0 +1,37 @@
+#! /bin/bash
+
+#checking needed argument is given or not
+if [ $# -eq 1 ]; then
+echo "Given argument is $@ "
+else
+exit 1
+fi
+
+# Checking test condition
+if test $1 -eq 2
+then
+echo "given argument is eqal 2"
+fi
+
+# Checking expression condition
+if ! [ $1 -ne 2 ]
+then 
+echo "given value is not equal 2"
+fi
+
+
+# Checking file is present or not
+if [ -f xyz.txt ]
+then
+echo "file is present"
+fi
+
+
+# checking DIR is present or not
+DIR=/home/pratik
+if [ -d "$DIR" ]
+then
+echo "thisdirectory is present"
+else
+echo "this directory is not present"
+fi

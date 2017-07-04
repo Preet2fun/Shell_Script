@@ -1,0 +1,22 @@
+#! /bin/bash
+
+if [ $# > 0 ]; then
+n=$1
+
+# For Loop Example
+for i in 1 2 3 4 5
+do
+  echo "enter number is $n"
+  echo "Ans = `expr $n \* $i` "	
+done
+
+# While Loop Example
+while [ $n -ge 1 ] 
+do
+echo "Value is $n"
+n=`expr $n - 1` 
+done
+
+else
+exit 1
+fi
